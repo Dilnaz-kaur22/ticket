@@ -1,0 +1,208 @@
+@import "./reset.css";
+
+:root {
+    --app-dark-bg: #1a1c24;
+    --app-grey: #262930;
+    --app-text: #fff;
+    --app-orange: #FF7B02;
+    --app-orange-hover: #a55d1a;
+}
+
+body {
+    background-color: var(--app-dark-bg);
+    font-family: Inter, sans-serif;
+  }
+  
+.container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+ }
+
+
+
+header {
+    background-color: var(--app-grey);
+    height: 60px;
+    width:100%;
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 70px;
+}
+
+header div {
+    color: var(--app-text);
+    display: flex;
+    float: left;
+}
+
+header div h2 {
+    line-height: 60px;
+    margin: auto 10px;
+    font-size: 40px;
+}
+
+header div i {
+    color: var(--app-orange);
+    margin: auto;
+    font-size: 40px;
+}
+
+header ul {
+    display: flex;
+    float: left;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--app-text);
+    line-height: 70px;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: all .3s ease-in;
+}
+
+header ul li a:hover{
+    color: var(--app-orange);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+}
+
+#movies-title{
+    width: 630px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: var(--app-grey);
+    padding: 15px;
+    color: #fff;
+    padding-left: 35px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+#cities-name{
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--app-grey);
+    padding: 15px;
+    color: #fff;
+    padding-left: 35px;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.search i {
+    position: absolute;
+    padding-top: 4px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: auto 10px;
+    color: var(--app-text);
+}
+
+.search input {
+    height: 40px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--app-grey);
+    padding: 0px 10px 0px 40px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.search button {
+    width: 100px;
+    height: 40px;
+    margin-top: 8px;
+    font-size: 14px;
+    padding: 5px;
+    background-color: var(--app-orange);
+    border-radius: 30px;
+    color: #fff;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--app-orange-hover) ;
+}
+
+.movies {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.movies a {
+    line-height: 40px;
+    text-decoration: none;
+    display: block;
+    padding: 0px 10px;
+}
+
+.movies a:hover {
+    background-color: var(--app-orange);
+    color: #fff;
+}
+
+.cities {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.cities a {
+    line-height: 40px;
+    display: block;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.cities a:hover {
+    background-color: var(--app-orange);
+    color: #fff;
+}
+
+
+.show h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Gill Sans';
+}
+
+.display {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+
+.poster {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.poster:hover {
+    transform: scale(1.1);
+  }
